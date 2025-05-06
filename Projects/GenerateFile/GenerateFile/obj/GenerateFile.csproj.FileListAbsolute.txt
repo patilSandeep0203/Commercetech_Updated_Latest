@@ -1,0 +1,2 @@
+C:\Documents and Settings\Harshpatwardhan\My Documents\Visual Studio 2005\Projects\GenerateFile\GenerateFile\obj\Debug\GenerateFile.exe
+C:\Documents and Settings\Harshpatwardhan\My Documents\Visual Studio 2005\Projects\GenerateFile\GenerateFile\obj\Debug\GenerateFile.pdb

@@ -1,0 +1,8 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\IMS.Properties.Resources.resources
+obj\Debug\IMS.csproj.GenerateResource.Cache
+bin\Debug\IMS.exe
+bin\Debug\IMS.pdb
+obj\Debug\IMS.exe
+obj\Debug\IMS.pdb
+obj\Debug\IMS.IMSMain.resources

@@ -1,0 +1,109 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5CBD26F6-EDD7-458F-B349-195FCD36058E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DLPartner</RootNamespace>
+    <AssemblyName>DLPartner</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Extensions.Design, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACTDataDL.cs" />
+    <Compile Include="AdministrativeDL.cs" />
+    <Compile Include="AffiliatesDL.cs" />
+    <Compile Include="BannersDL.cs" />
+    <Compile Include="CommissionsDL.cs" />
+    <Compile Include="PartnerDS.cs">
+      <DependentUpon>PartnerDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PartnerDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartnerDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsDL.cs" />
+    <Compile Include="PartnerLogDL.cs" />
+    <Compile Include="PDFDL.cs" />
+    <Compile Include="FirstAffiliatesLeadsDL.cs" />
+    <Compile Include="MonthDL.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="UserRolesDL.cs" />
+    <Compile Include="UsersDL.cs" />
+    <Compile Include="PackageDL.cs" />
+    <Compile Include="OnlineAppDL.cs" />
+    <Compile Include="OnlineAppProcessingDL.cs" />
+    <Compile Include="OnlineAppStatusDL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReferralsDL.cs" />
+    <Compile Include="RepInfoDL.cs" />
+    <Compile Include="ResidualsDL.cs" />
+    <Compile Include="SalesOppDL.cs" />
+    <Compile Include="BoundsDL.cs" />
+    <Compile Include="OnlineAppSummaryDL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PartnerDS.xsc">
+      <DependentUpon>PartnerDS.xsd</DependentUpon>
+    </None>
+    <None Include="PartnerDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>PartnerDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="PartnerDS.xss">
+      <DependentUpon>PartnerDS.xsd</DependentUpon>
+    </None>
+    <None Include="PartnerDS.xsx">
+      <DependentUpon>PartnerDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

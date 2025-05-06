@@ -1,0 +1,8 @@
+bin\Debug\GenerateFile.exe
+bin\Debug\GenerateFile.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\GenerateFile.Generate.resources
+obj\Debug\GenerateFile.Properties.Resources.resources
+obj\Debug\GenerateFile.csproj.GenerateResource.Cache
+obj\Debug\GenerateFile.exe
+obj\Debug\GenerateFile.pdb
